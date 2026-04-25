@@ -1,4 +1,4 @@
-# devopsProjects2023
+# devopsProjects
 # Psuedo Code Just to show the quality and structure of Code Layout used
 # Codes Most Proud Of
 
@@ -69,34 +69,39 @@ Create IAM role --> Instances --> select Docker-Jenkins server --> Actions --> S
 </details>  
 
 
-
-
+<details>
+  <summary> Click Here To See Code Sample<br>
+---------------------------------------------------------<br>
+Terraform<br>
 ---------------------------------------------------------
-Terraform
----------------------------------------------------------
-Creates State file - Stores state of Architecture
+  </summary>
+  
+Creates State file - Stores state of Architecture<br>
 
-1. Install Terrform CLI (binary)
-2. AWS CLI  ---> C:\Users\ninuo\.aws
-3. Editor
-4. Hashicorp Terraform plugin 
+1. Install Terrform CLI (binary)<br>
+2. AWS CLI  ---> C:\Users\ninuo\.aws<br>
+3. Editor<br>
+4. Hashicorp Terraform plugin<br>
 
-terra.sh-------------------------------------
-#!/bin/bash
-<<Guide
-"Author: NoioLeo Date:02/17/2023
-Below is Shell Script to automate
-Terraform-Ansible-K8 Integration set up
-You require Sudo access to run Script"
-Guide
-sudo yum update -y
-sudo yum install nano wget zip unzip git tar apache2 firewalld nginx vim nano tree net-tools curl sudo apt-get install fontconfig openjdk-11-jre -y -y
-curl https://s3.amazonaws.com/aws-cli/awscli-bundle.zip -o awscli-bundle.zip
-sudo unzip awscli-bundle.zip
-sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
-#use code below incase code line above does not work
-#sudo apt install awscli
-----------------------------------------------------------------
+terra.sh-------------------------------------<br>
+#!/bin/bash<br>
+<<Guide<br>
+"Author: NoioLeo Date:02/17/2023<br>
+Below is Shell Script to automate<br>
+Terraform-Ansible-K8 Integration set up<br>
+You require Sudo access to run Script"<br>
+Guide<br>
+sudo yum update -y<br>
+sudo yum install nano wget zip unzip git tar apache2 firewalld nginx vim nano tree net-tools curl sudo apt-get install fontconfig openjdk-11-jre -y -y<br>
+curl https://s3.amazonaws.com/aws-cli/awscli-bundle.zip -o awscli-bundle.zip<br>
+sudo unzip awscli-bundle.zip<br>
+sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws<br>
+#use code below incase code line above does not work<br>
+#sudo apt install awscli<br>
+----------------------------------------------------------------<br>
+</details>  
+
+
 
 
 ---------------------------------------------------------
