@@ -71,9 +71,9 @@ Create IAM role --> Instances --> select Docker-Jenkins server --> Actions --> S
 
 <details>
   <summary> Click Here To See Code Sample<br>
----------------------------------------------------------<br>
+============================================================<br>
 Terraform<br>
----------------------------------------------------------
+============================================================
   </summary>
   
 Creates State file - Stores state of Architecture<br>
