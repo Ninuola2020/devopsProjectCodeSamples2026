@@ -1,6 +1,69 @@
 # devopsProjects2023
+#Psuedo Code Just to show the quality and structure of Code Layout used
+# Codes Most Proud Of
+===============================================================
+Docker-Jenkins-K8 integration
+===============================================================
+172.31.14.184
+ssh -i Demo_key_1.pem ubuntu@35.182.231.159
+ssh jenkins@35.182.231.159
 
-# Code Mos Proud of
+
+dockJk.sh-------------------------------------
+#!/bin/bash
+<<Guide
+"Author: NoioLeo Date:02/17/2023
+Below is Shell Script to automate
+Docekr-Jenkins Integration set up
+You require Sudo access to run Script"
+Guide
+sudo apt update -y
+#installing dependencies
+sudo apt install docker.io nano wget zip unzip git tar apache2 firewalld nginx vim nano tree net-tools -y
+sudo apt-get install fontconfig openjdk-11-jre -y
+sudo systemctl enable firewalld
+sudo systemctl start firewalld
+sudo systemctl status firewalld
+sudo firewall-cmd --add-port={80/tcp,443/tcp,22/tcp,8080/tcp,8081/tcp,9000/tcp} --permanent
+sudo firewall-cmd --zone=docker --add-port={80/tcp,443/tcp,22/tcp,8080/tcp,8081/tcp,9000/tcp} --permanent
+sudo firewall-cmd --reload
+sudo firewall-cmd --zone=docker --list-all
+#installing docker
+sudo systemctl start docker
+sudo systemctl enable docker.service
+#installing Jenkins
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /etc/apt/trusted.gpg.d/jenkins.io.asc
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+#Atlernative below
+#curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+#echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+sudo usermod -aG docker jenkins
+sudo usermod -aG sudo jenkins
+sudo usermod -aG ubuntu jenkins
+systemctl restart docker.service
+sudo echo "jenkins ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/jenkins
+sudo chown -R jenkins:docker /var/run/docker/
+sudo chown jenkins /var/run/docker.sock
+===========================================
+
+
+Create IAM role --> Instances --> select Docker-Jenkins server --> Actions --> Security --> modify IAM --> Create Role
+                --> use AWS services -->AmazonEC2FullAccess 
+                                        AmazonS3FullAccess
+                                        IAMFullAccess 
+                                        AmazonVPCFullAccess
+                                        AmazonRoute53FullAccess
+                --> name policy, save role --> select Role for Server --> update IAM role
+
+
+
+
+
+===========================================
 
 ---------------------------------------------------------
 Terraform
