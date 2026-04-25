@@ -3,14 +3,16 @@
 # Codes Most Proud Of
 
 <details>
-  <summary>Click here to expand</summary>
+  <summary>
+===============================================================
+Docker-Jenkins-K8 integration
+===============================================================
+  </summary>
   
   This content is hidden until you click the summary above.
 </details>  
 
-===============================================================
-Docker-Jenkins-K8 integration
-===============================================================
+
 
 dockJk.sh-------------------------------------
 #!/bin/bash
