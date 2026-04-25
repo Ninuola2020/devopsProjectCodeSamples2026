@@ -63,9 +63,7 @@ Create IAM role --> Instances --> select Docker-Jenkins server --> Actions --> S
 
 
 
-===========================================
-
- 
+============================================================
 </details>  
 
 
@@ -98,25 +96,33 @@ sudo unzip awscli-bundle.zip<br>
 sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws<br>
 #use code below incase code line above does not work<br>
 #sudo apt install awscli<br>
-----------------------------------------------------------------<br>
+============================================================<br>
 </details>  
 
 
 
+<details>
+  <summary> Click Here To See Code Sample<br>
+============================================================<br>
+Ngrok Private access to local Unit for Testing<br>
+============================================================
+  </summary>
+  
+ GitHub will notify jenkins to trigger bill once there is a change in SCM<br>
+   http://192.168.86.131:8080/github-webhook/<br>
 
----------------------------------------------------------
-Ngrok Private access to local Unit for Testing
----------------------------------------------------------
+   local system Setup:<br>
+   choco install ngrok -y<br>
+   ngrok http localIpAddress:8080<br>
+   open link given in CMD<br>
+   register/log in Ngrok<br>
+   run provided code on log in page after verification<br>
+   ngrok http localIpAddress:8080<br>
+   https://8894-108-218-29-105.ngrok.io/github-webhook/<br>
+   got to project Reppo-->settings --> webhook --> add webhook --> save<br>
+============================================================<br>
+</details>
 
- GitHub will notify jenkins to trigger bill once there is a change in SCM
-   http://192.168.86.131:8080/github-webhook/
 
-   local system Setup:
-   choco install ngrok -y
-   ngrok http localIpAddress:8080
-   open link given in CMD
-   register/log in Ngrok
-   run provided code on log in page after verification
-   ngrok http localIpAddress:8080
-   https://8894-108-218-29-105.ngrok.io/github-webhook/
-   got to project Reppo-->settings --> webhook --> add webhook --> save
+
+
