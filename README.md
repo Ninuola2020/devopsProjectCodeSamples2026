@@ -3,7 +3,7 @@
 # Codes Most Proud Of
 
 <details>
-  <summary> Click Block Below To See Code Sample<br>
+  <summary> Click Here To See Code Sample<br>
 ===============================================================<br>
 Docker-Jenkins-K8 integration<br>
 ===============================================================
