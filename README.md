@@ -9,11 +9,6 @@ Docker-Jenkins-K8 integration<br>
 ===============================================================
   </summary>
   
-  This content is hidden until you click the summary above.
-</details>  
-
-
-
 dockJk.sh-------------------------------------
 #!/bin/bash
 <<Guide
@@ -69,6 +64,12 @@ Create IAM role --> Instances --> select Docker-Jenkins server --> Actions --> S
 
 
 ===========================================
+
+ 
+</details>  
+
+
+
 
 ---------------------------------------------------------
 Terraform
