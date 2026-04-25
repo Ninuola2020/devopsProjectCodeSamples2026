@@ -1,5 +1,5 @@
 # devopsProjects2023
-#Psuedo Code Just to show the quality and structure of Code Layout used
+# Psuedo Code Just to show the quality and structure of Code Layout used
 # Codes Most Proud Of
 ===============================================================
 Docker-Jenkins-K8 integration
